@@ -16,7 +16,6 @@ const app = express();
 
 
 //middlewares
-app.use(express.json());
 app.use(cors());
 app.use(express.urlencoded({ extended: false }));
 
