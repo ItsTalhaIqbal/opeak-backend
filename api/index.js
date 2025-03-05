@@ -28,6 +28,8 @@ if (!fs.existsSync('uploads')) {
 }
 
 // Use the upload route
+app.use('/api', uploadRouter);
+
 app.use('/api', productRoute);
 app.use('/api', categoryRoute);
 app.use('/api', orderRoute);
